@@ -67,17 +67,17 @@
 		h-260 v-10
 	" />
 
-
 <path fill="#000" opacity="1.000000"
 	d="
 		M260,475
 		a243,243 0,0,1 480,0
+		h-90 v-10
+		A153,153 0,0,0 350,475
 	" />
 
-<path fill="#fff" class="centerWhiteCircle" opacity="1.000000"
+<path fill="#fff" id="centerCircle" opacity="0.50000"
 	d="
-		M350,474
-		A153,153 0,0,1 650,474
+		M350,475
+		A153,153 0,0,1 650,475
 	" />
-
 </svg>

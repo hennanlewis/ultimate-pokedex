@@ -1,46 +1,79 @@
-# Getting Started with Create React App
+# Ultimate Pokedex
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+    <img src="./public/screenshot1.jpg" />
+    <img src="./public/screenshot2.jpg" />
+</div>
 
-## Available Scripts
 
-In the project directory, you can run:
+Os dois projetos mais batidos que todo estudante de front-end faz são o da calculadora e o da Pokedex. Como já fiz o da calculadora, agora é a hora da minha pokedex.
 
-### `npm start`
+Como uma grande parte dos projetos usam a PokeAPI apenas pra fazer a requisição e exibir as imagens com os nomes dos respectivos pokemon, então, vou incrementar esse também assim como fiz com a calculadora ([link do o repositório do projeto](https://github.com/hennanlewis/calculadora-diferenciada), o README.md tá massa).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<br>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Pontos a serem contemplados
 
-### `npm test`
+### Basicamente pretendo atingir alguns pontos em relação ao desenvolvimento:
+- [x] utilizar princípios de Clean Code ( ou pelo menos tanto quanto eu conseguir )
+- [ ] utilizar sistema de rotas pra navegar entre as principais funções
+- [x] utilizar **glassmorphism*** como padrão de design
+- [x] utilizar a PokeAPI pra obter os dados
+- [x] utilizar React com TypeScript
+- [x] aplicação responsível
+- [ ] utilizar **GraphQL****
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+\* tendência de design que o objetivo é "imitar" visual do vidro.
+** ainda em processo de análise, pois a resposta da API nos trás muitos dados que não nos interessa.
 
-### `npm run build`
+<br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Agora em relação às funções pretendidas, são as seguintes:
+- [x] exibir Pokedex Nacional (todos os pokemon e seus respectivos nomes)
+- [ ] cálculo de porcentagem de taxa de sucesso de captura de cada um
+- [ ] comparar tamanho do pokemon com o tamanho do Ash
+- [x] exibir dados sobre cada pokemon individualmente
+- [ ] exibir valores de status base em gráfico de radar
+- [ ] botão para executar som de cada pokemon
+- [ ] exibir pokemon por geração dos jogos
+- [ ] quiz "quem é esse pokemon?"
+- [ ] quiz dos sons de pokemon
+- [ ] filtros de pesquisa
+- [ ] lista de golpes
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Mas são muitas funções propostas...
+Sim, tenho consciência disso! Porém, também tenho confiança no meu interesse e nas minhas habilidades, pois já tenho um pouco de costume em fazer projetos, mas nunca os coloquei no Github por serem coisas bem triviais feitas para conhecer a tecnologia.
 
-### `npm run eject`
+<br>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Como executar o projeto
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Após clonar o repositório, o seguinte código instala as dependências necessárias:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```shell
+yarn
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Caso tenha preferência pelo `npm` como gerenciador de pacotes, utilize:
 
-## Learn More
+```shell
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Após a finalização da instalação das dependências necessárias, o seguinte código executa a aplicação:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```shell
+yarn start
+```
+
+ou caso tenha preferência pelo `npm` como gerenciador de pacotes:
+
+```shell
+npm start
+```
+
+- Caso a aplicação não abra automaticamente no navegador, abra [http://localhost:3000](http://localhost:3000) no navegador.
+
+3. Para parar a aplicação, pressione `ctrl+c` no teclado.

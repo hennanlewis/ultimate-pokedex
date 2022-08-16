@@ -10,16 +10,26 @@ export type PokeAPIResProps = {
 	results: PokemonsResultProps[] | []
 }
 
+export type StatsProps = {
+	base_stat: number
+	stat: {
+		name: string
+	}
+}
+
 export type PokemonProps = {
 	id: number
 	height: number
 	weight: number
 	name: string
-	flavor_text_entries: { flavor_text: string }[]
-	stats: {
-		base_stat: number
-		stat: {
-			name: string
-		}
+	flavor_text_entries: {
+		language: { name: string }
+		flavor_text: string
 	}[]
+	stats: StatsProps[]
+	types: { type: { name: string } }[]
+}
+
+export type ColorByTypeProps = {
+	[key: string]: string
 }

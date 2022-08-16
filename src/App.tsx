@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
-// import { InfoPokemon } from "./components/InfoPokemon"
-// import { NationalPokedex } from "./components/NationalPokedex"
+import { HashRouter, Route, Routes } from "react-router-dom"
+import { InfoPokemon } from "./components/InfoPokemon"
+import { NationalPokedex } from "./components/NationalPokedex"
 
 import { Pokedex } from "./components/Pokedex"
 import { pokeAPIReqArray } from "./utils/pokeAPIReq"
@@ -20,9 +21,16 @@ function App() {
 	}, [])
 
 	return (
-		<Pokedex />
-		// <NationalPokedex />
-		// <InfoPokemon />
+		<>
+			<HashRouter>
+				<Routes>
+					<Route index element={<Pokedex />} />
+					<Route path="national-pokedex" element={<NationalPokedex />} />
+					<Route path="pokemon" element={<NationalPokedex />} />
+					<Route path="pokemon/:id" element={<InfoPokemon />} />
+				</Routes>
+			</HashRouter>
+		</>
 	)
 }
 

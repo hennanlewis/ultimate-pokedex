@@ -1,10 +1,16 @@
 # Ultimate Pokedex
 
 <div align="center">
-    <img src="./public/screenshot1.jpg" />
-    <img src="./public/screenshot2.jpg" />
+    <img src="./public/screenshot1.jpg" width="49%" />
+    <img src="./public/screenshot2.jpg" width="49%"  />
+    <img src="./public/screenshot3.jpg"  />
+    <img src="./public/screenshot4.jpg" width="49%" />
+    <img src="./public/screenshot5.jpg" width="49%"  />
 </div>
 
+[Clique aqui para visualizar o projeto hospedado no Githut Pages](http://hennanlewis.github.io/ultimate-pokedex)
+
+<br>
 
 Os dois projetos mais batidos que todo estudante de front-end faz são o da calculadora e o da Pokedex. Como já fiz o da calculadora, agora é a hora da minha pokedex.
 
@@ -16,7 +22,7 @@ Como uma grande parte dos projetos usam a PokeAPI apenas pra fazer a requisiçã
 
 ### Basicamente pretendo atingir alguns pontos em relação ao desenvolvimento:
 - [x] utilizar princípios de Clean Code ( ou pelo menos tanto quanto eu conseguir )
-- [ ] utilizar sistema de rotas pra navegar entre as principais funções
+- [x] utilizar sistema de rotas pra navegar entre as principais funções
 - [x] utilizar **glassmorphism*** como padrão de design
 - [x] utilizar a PokeAPI pra obter os dados
 - [x] utilizar React com TypeScript
@@ -24,7 +30,7 @@ Como uma grande parte dos projetos usam a PokeAPI apenas pra fazer a requisiçã
 - [ ] utilizar **GraphQL****
 
 \* tendência de design que o objetivo é "imitar" visual do vidro.
-** ainda em processo de análise, pois a resposta da API nos trás muitos dados que não nos interessa.
+** ainda em processo de análise, pois a resposta da API nos traz muitos dados que não nos interessa.
 
 <br>
 
@@ -33,7 +39,7 @@ Como uma grande parte dos projetos usam a PokeAPI apenas pra fazer a requisiçã
 - [ ] cálculo de porcentagem de taxa de sucesso de captura de cada um
 - [ ] comparar tamanho do pokemon com o tamanho do Ash
 - [x] exibir dados sobre cada pokemon individualmente
-- [ ] exibir valores de status base em gráfico de radar
+- [x] exibir valores de status base em gráfico de radar
 - [ ] botão para executar som de cada pokemon
 - [ ] exibir pokemon por geração dos jogos
 - [ ] quiz "quem é esse pokemon?"
@@ -44,7 +50,7 @@ Como uma grande parte dos projetos usam a PokeAPI apenas pra fazer a requisiçã
 <br>
 
 ## Mas são muitas funções propostas...
-Sim, tenho consciência disso! Porém, também tenho confiança no meu interesse e nas minhas habilidades, pois já tenho um pouco de costume em fazer projetos, mas nunca os coloquei no Github por serem coisas bem triviais feitas para conhecer a tecnologia.
+Sim, tenho consciência de que são muitas funções para um projeto pessoal e que dizem que posso perder a motivação no meio do caminho, porém, também tenho confiança em meu interesse e em minhas habilidades, pois já tenho um pouco de costume em fazer projetos, apenas não os coloco no Github por serem coisas bem triviais feitas para conhecer tecnologias.
 
 <br>
 

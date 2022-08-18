@@ -8,7 +8,7 @@
     <img src="./public/screenshot5.jpg" width="49%"  />
 </div>
 
-[Clique aqui para visualizar o projeto hospedado no Githut Pages](http://hennanlewis.github.io/ultimate-pokedex)
+[Clique aqui para visualizar o projeto hospedado no Github Pages](http://hennanlewis.github.io/ultimate-pokedex)
 
 <br>
 
@@ -38,9 +38,9 @@ Como uma grande parte dos projetos usam a PokeAPI apenas pra fazer a requisiçã
 - [x] exibir Pokedex Nacional (todos os pokemon e seus respectivos nomes)
 - [ ] cálculo de porcentagem de taxa de sucesso de captura de cada um
 - [ ] comparar tamanho do pokemon com o tamanho do Ash
+- [x] exibir valores base de stats base em gráficos (Chart.js)
 - [x] exibir dados sobre cada pokemon individualmente
-- [x] exibir valores de status base em gráfico de radar
-- [ ] botão para executar som de cada pokemon
+- [x] botão para executar som de cada pokemon
 - [ ] exibir pokemon por geração dos jogos
 - [ ] quiz "quem é esse pokemon?"
 - [ ] quiz dos sons de pokemon

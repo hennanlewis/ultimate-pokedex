@@ -1,6 +1,7 @@
 .pokedex {
 	@apply absolute flex flex-col items-center w-[24rem]
-	left-auto right-auto top-auto bottom-auto;
+	left-auto right-auto top-auto bottom-auto scale-75
+	sm:scale-100;
 }
 
 .pokedex_top,
@@ -32,4 +33,5 @@
 
 .pokedex_display_button:hover {
 	text-shadow: 0 0 2px #f87171a0;
+	@apply animate-ping;
 }

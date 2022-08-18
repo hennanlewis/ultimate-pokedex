@@ -5,12 +5,12 @@
 @layer base {
 	:root {
 		--typecolor: 84, 84, 84;
-		--typecolordark: 0, 0, 0;
+		--typecolor2: 0, 0, 0;
 	}
 }
 
 html {
-	@apply h-full overflow-hidden;
+	@apply bg-black h-full overflow-hidden;
 }
 
 body {
@@ -19,5 +19,6 @@ body {
 
 #root {
 	@apply absolute flex justify-center items-center
-	w-full h-full;
+	w-full h-full bg-gradient-to-b from-slate-800
+	to-black;
 }

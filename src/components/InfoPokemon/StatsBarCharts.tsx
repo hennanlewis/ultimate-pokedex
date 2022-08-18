@@ -26,8 +26,10 @@ export const StatsBarChart = (props: {
 }) => {
 	const { stats, bgColorDataChart } = props
 	const statsRenamed = ["HP", "ATK", "DEF", "SP. ATK", "SP. DEF", "SPD"]
+	const stepSize = 20
+	const maxValue = Math.max(...stats.map((item) => item.base_stat))
 	const maxValueArray = Array(stats.length).fill(
-		Math.max(...stats.map((item) => item.base_stat))
+		maxValue + stepSize - (maxValue % stepSize)
 	)
 
 	const chartData: ChartData<"bar"> = {
@@ -56,6 +58,9 @@ export const StatsBarChart = (props: {
 		scales: {
 			x: {
 				stacked: true,
+				ticks: {
+					stepSize: stepSize,
+				},
 			},
 		},
 	}

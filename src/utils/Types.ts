@@ -1,3 +1,8 @@
+export type PokemonSimpleDataProps = {
+	name: string
+	id: string
+}
+
 export type PokemonsResultProps = {
 	name: string
 	url: string
@@ -19,9 +24,10 @@ export type StatsProps = {
 
 export type PokemonProps = {
 	id: number
+	name: string
 	height: number
 	weight: number
-	name: string
+	capture_rate: number
 	flavor_text_entries: {
 		language: { name: string }
 		flavor_text: string

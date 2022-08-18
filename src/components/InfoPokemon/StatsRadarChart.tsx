@@ -3,6 +3,7 @@ import { Chart as ChartJS, RadialLinearScale, Title, Filler } from "chart.js"
 import type { ChartData, ChartOptions } from "chart.js"
 
 import { StatsProps } from "../../utils/Types"
+import { useState } from "react"
 
 ChartJS.register(RadialLinearScale, Filler, Title)
 
@@ -29,6 +30,7 @@ export const StatsRadarChart = (props: {
 		],
 	}
 
+	const delayed = null
 	const chartOptions: ChartOptions<"radar"> = {
 		plugins: {
 			legend: {

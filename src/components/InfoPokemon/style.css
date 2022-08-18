@@ -1,5 +1,5 @@
 .pokemonInfo_limiter {
-	@apply absolute max-w-[80vw] max-h-[70vh] w-full h-full
+	@apply absolute max-w-[90vw] max-h-[90vh] sm:max-h-[70vh] w-full h-full
 	2xl:text-[150%] border border-white/20 border-b-sky-900/40
 	border-r-sky-900/40 rounded-2xl sm:rounded-[2rem]
 	shadow-xl shadow-black;
@@ -29,7 +29,7 @@
 
 .pokemonInfo-mediaQueryOptions {
 	@apply grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-10
-	place-content-around;
+	pt-10 place-content-around;
 }
 
 .pokemonInfo_figure,
@@ -47,7 +47,7 @@
 
 .pokemonInfo_figure_caption {
 	text-shadow: 0 2px 10px #000;
-	@apply absolute -top-10 right-0 font-bold
+	@apply absolute top-0  sm:-top-10 right-0 font-bold
 	text-[calc(10vw+0.5rem)] md:text-[calc(6vw+0.5rem)]
 	lg:text-[calc(6vw+1rem)];
 }
@@ -71,6 +71,10 @@
 	rounded-xl;
 }
 
+.pokemonInfo_types {
+	@apply -mt-2 font-light text-[90%] sm:text-[70%] lowercase;
+}
+
 .pokemonInfo_height,
 .pokemonInfo_weight,
 .pokemon_stats_hp,
@@ -80,7 +84,7 @@
 .pokemon_stats_specialdefense,
 .pokemon_stats_speed,
 .pokemon_stats_none {
-	@apply flex flex-col items-center text-sm sm:text-base;
+	@apply flex flex-col justify-center items-center text-sm sm:text-base;
 }
 
 .pokemonInfo_weight > span:first-child,
@@ -92,6 +96,10 @@
 .pokemon_stats_specialdefense > span:first-child,
 .pokemon_stats_speed > span:first-child {
 	@apply text-[150%] font-bold leading-5;
+}
+.pokemonInfo_cry {
+	@apply p-4 aspect-square bg-typecolor shadow shadow-black
+	rounded-full;
 }
 
 .pokemonInfo_description {
@@ -114,7 +122,7 @@
 
 .pokemonInfo_stats_barCharts,
 .pokemonInfo_stats_radarCharts {
-	@apply w-full lg:w-[45%];
+	@apply w-full min-h-[2rem] lg:w-[45%];
 }
 
 .pokemonInfo_stats_values {

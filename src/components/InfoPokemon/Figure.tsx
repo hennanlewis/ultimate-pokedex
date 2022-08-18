@@ -1,11 +1,15 @@
+import { useState } from "react"
+import { FaPauseCircle, FaPlayCircle } from "react-icons/fa"
 import { handleCapitalize, handleSharpedIDs } from "../../utils/dataTransform"
 import { PokemonProps } from "../../utils/Types"
+import useInterval from "../../utils/useInterval"
 
 export const Figure = (props: {
 	id: string | undefined
 	pokemon: PokemonProps | null
 }) => {
 	const { id, pokemon } = props
+
 	return pokemon && id ? (
 		<>
 			<figcaption className="pokemonInfo_figure_caption">

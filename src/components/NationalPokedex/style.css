@@ -5,7 +5,7 @@
 	sm:rounded-[2rem] shadow-xl shadow-black;
 }
 
-.limiter {
+.nationalPokedex_limiter {
 	@apply absolute max-w-[90vw] max-h-[90vh] sm:max-h-[70vh]
 	w-full h-full 2xl:text-[150%] border border-white/20
 	border-b-sky-900/40 border-r-sky-900/40 rounded-2xl

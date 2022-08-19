@@ -1,0 +1,83 @@
+.captureRate_limiter {
+	@apply absolute max-w-[90vw] max-h-[90vh] sm:max-h-[70vh] w-[26rem] h-full
+	2xl:text-[150%] border border-white/20 border-b-sky-900/40
+	border-r-sky-900/40 rounded-2xl sm:rounded-[2rem]
+	shadow-xl shadow-black;
+}
+
+.captureRate_navigationButtons {
+	@apply absolute flex justify-between w-full mt-2
+	px-4 py-2 text-white text-3xl drop-shadow-md z-10;
+}
+
+.captureRate {
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	@apply flex flex-col w-full h-full p-3 sm:p-10 gap-3
+	sm:gap-10 bg-white/10 text-white rounded-2xl
+	sm:rounded-[2rem] overflow-auto scrollbar-none;
+}
+
+.captureRate_form,
+.captureRate_form > div {
+	@apply flex flex-col gap-4;
+}
+
+.captureRate_form label {
+	@apply flex flex-col gap-1;
+}
+
+.captureRate_form button {
+	@apply w-full py-1 bg-sky-600 text-white rounded-md;
+}
+
+.captureRate_form label > input {
+	@apply p-1 text-black rounded-sm;
+}
+
+.captureRate_display_limiter {
+	@apply overflow-clip;
+}
+
+.captureRate_display {
+	@apply relative flex flex-col justify-between w-full h-auto
+	p-2 bg-white/70 text-black rounded;
+}
+
+.captureRate_display_screenTop {
+	@apply relative flex justify-between h-28;
+}
+
+.captureRate_display_screenTop > img {
+	@apply absolute right-4 bottom-0 translate-x-[20%]
+	overflow-hidden;
+}
+
+.display_screenTop_pokemonInfo {
+	@apply self-start flex flex-col w-3/5 px-3 py-1
+	bg-yellow-100 border-[3px] border-black rounded-lg z-10;
+}
+
+.display_screenTop_pokemonInfo > div {
+	@apply flex justify-between items-baseline gap-2 font-bold
+	font-mono text-xs sm:text-base;
+}
+
+.screenTop_pokemonInfo_hp {
+	@apply flex items-center gap-1 w-full h-5 px-2 bg-slate-900
+	text-lg text-white border rounded-md;
+}
+
+.pokemonInfo_hp_bar {
+	@apply relative w-full h-2 bg-gray-700 border
+	border-white rounded-sm;
+}
+
+.pokemonInfo_hp_barSize {
+	@apply absolute h-full;
+}
+
+.captureRate_display_screenBottom {
+	@apply flex flex-col h-24 px-3 py-1 bg-yellow-100
+	font-mono font-bold text-sm border-[3px] border-black rounded-lg;
+}

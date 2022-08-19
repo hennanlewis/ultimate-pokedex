@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { HashRouter, Route, Routes } from "react-router-dom"
+import { CaptureRate } from "./components/CaptureRate"
 import { InfoPokemon } from "./components/InfoPokemon"
 import { NationalPokedex } from "./components/NationalPokedex"
 
@@ -25,6 +26,7 @@ function App() {
 			<HashRouter>
 				<Routes>
 					<Route index element={<Pokedex />} />
+					<Route path="catch-rate" element={<CaptureRate />} />
 					<Route path="national-pokedex" element={<NationalPokedex />} />
 					<Route path="pokemon" element={<NationalPokedex />} />
 					<Route path="pokemon/:id" element={<InfoPokemon />} />

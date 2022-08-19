@@ -12,9 +12,7 @@ import { SpecieData } from "./SpecieData"
 import { Pokedex } from "../Pokedex"
 import { Figure } from "./Figure"
 import "./style.css"
-import { CaptureRate } from "./CaptureRate"
 
-//http://play.pokemonshowdown.com/sprites/ani/
 export const InfoPokemon = () => {
 	const [pokemonInfo, setPokemonInfo] = useState<PokemonProps | null>(null)
 	const params = useParams()
@@ -47,7 +45,7 @@ export const InfoPokemon = () => {
 	return (
 		<>
 			<Pokedex />
-			<div className="pokemonInfo_limiter">
+			<div className="pokemonInfo_limiter transition200">
 				<div className="pokemonInfo_navigationButtons">
 					<NavigationButton />
 				</div>
@@ -67,12 +65,6 @@ export const InfoPokemon = () => {
 							<StatsCharts pokemonInfo={pokemonInfo} typeColor={typecolor} />
 						)}
 					</div>
-					{/* <div className="pokemonInfo_captureRate">
-						<CaptureRate
-							stats={pokemonInfo?.stats}
-							captureRate={pokemonInfo?.capture_rate}
-						/>
-					</div> */}
 				</div>
 			</div>
 		</>

@@ -22,3 +22,7 @@ body {
 	w-full h-full bg-gradient-to-b from-slate-800
 	to-black;
 }
+
+.transition200 {
+	@apply duration-200;
+}

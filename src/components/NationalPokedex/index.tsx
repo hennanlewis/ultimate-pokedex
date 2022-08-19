@@ -9,8 +9,6 @@ import { PokemonCard } from "./PokemonCard"
 import { Pokedex } from "./../Pokedex"
 import "./style.css"
 
-// http://play.pokemonshowdown.com/sprites/ani/
-
 export const NationalPokedex = () => {
 	const [pokemons, setPokemons] = useState([pokemonNames[0]])
 	const [isAutoReloading, setIsAutoReloading] = useState(true)
@@ -58,7 +56,7 @@ export const NationalPokedex = () => {
 		<>
 			<Pokedex />
 			<div className="nationalPokedex_display">
-				<div className="limiter">
+				<div className="nationalPokedex_limiter transition200">
 					<div className="nationalPokedex">
 						<button
 							type="button"

@@ -26,6 +26,7 @@ Como uma grande parte dos projetos usam a PokeAPI apenas pra fazer a requisiçã
 - [x] utilizar **glassmorphism*** como padrão de design
 - [x] utilizar a PokeAPI pra obter os dados
 - [x] utilizar React com TypeScript
+- [ ] Adicção de testes unitários
 - [x] aplicação responsível
 - [ ] utilizar **GraphQL****
 
@@ -36,8 +37,8 @@ Como uma grande parte dos projetos usam a PokeAPI apenas pra fazer a requisiçã
 
 ### Agora em relação às funções pretendidas, são as seguintes:
 - [x] exibir Pokedex Nacional (todos os pokemon e seus respectivos nomes)
-- [ ] cálculo de porcentagem de taxa de sucesso de captura de cada um
 - [ ] comparar tamanho do pokemon com o tamanho do Ash
+- [x] cálculo de porcentagem de taxa de sucesso de captura
 - [x] exibir valores base de stats base em gráficos (Chart.js)
 - [x] exibir dados sobre cada pokemon individualmente
 - [x] botão para executar som de cada pokemon

@@ -5,7 +5,7 @@ export const SimpleSearch = (props: {
 }) => {
 	const { search, setSearch, setIsSearchActive } = props
 	return (
-		<div className="nationalPokedex_searchScreen">
+		<>
 			<div className="nationalPokedex_searchScreen_options">
 				<input
 					type="text"
@@ -16,6 +16,6 @@ export const SimpleSearch = (props: {
 					Fechar
 				</button>
 			</div>
-		</div>
+		</>
 	)
 }

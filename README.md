@@ -43,17 +43,16 @@ Como uma grande parte dos projetos usam a PokeAPI apenas pra fazer a requisiçã
 - [x] exibir dados sobre cada pokemon individualmente
 - [x] botão para executar som de cada pokemon
 - [ ] exibir pokemon por geração dos jogos
-- [ ] quiz "quem é esse pokemon?"
-- [ ] quiz dos sons de pokemon
+- [x] quiz "quem é esse pokemon?"
+- [x] quiz dos sons de pokemon
 - [ ] filtros de pesquisa
 - [ ] lista de golpes
 
 <br>
 
-## Mas são muitas funções propostas...
-Sim, tenho consciência de que são muitas funções para um projeto pessoal e que dizem que posso perder a motivação no meio do caminho, porém, também tenho confiança em meu interesse e em minhas habilidades, pois já tenho um pouco de costume em fazer projetos, apenas não os coloco no Github por serem coisas bem triviais feitas para conhecer tecnologias.
-
-<br>
+## Como visualizar o projeto
+O projeto pode ser visualizado no Github Pages. 
+[Clique aqui para visualizá-lo](http://hennanlewis.github.io/ultimate-pokedex)
 
 ## Como executar o projeto
 

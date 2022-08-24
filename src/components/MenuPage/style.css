@@ -1,0 +1,38 @@
+.menuPage_limiter {
+	@apply absolute max-w-[90vw] max-h-[90vh] sm:max-h-[70vh]
+	w-[26rem] h-full 2xl:text-[150%] border border-white/20
+	border-b-red-900/40 border-r-red-900/40 rounded-2xl
+	sm:rounded-[2rem] shadow-xl shadow-black;
+}
+
+.menuPage {
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	@apply relative flex flex-col w-full h-full p-3 sm:p-10 gap-3
+	sm:gap-10 bg-white/10 text-white rounded-2xl
+	sm:rounded-[2rem] overflow-auto scrollbar-none;
+}
+
+.menuPage_returnButton {
+	@apply relative;
+}
+
+.menuPage_options {
+	@apply grid grid-cols-2 gap-4 font-bold;
+}
+
+.menuPage_options_item {
+	@apply relative flex bg-red-600/70 text-white border
+	border-white/20 border-b-red-900/40 border-r-red-900/40
+	rounded-xl hover:brightness-110 hover:scale-105 overflow-hidden
+	duration-200;
+}
+
+.menuPage_options_item > img {
+	@apply absolute right-0 top-0 h-full rounded-xl;
+}
+
+.menuPage_options_item > span {
+	@apply relative inline-block w-full h-full p-4 pr-10 bg-gradient-to-r
+	from-red-900 via-red-900 to-transparent;
+}

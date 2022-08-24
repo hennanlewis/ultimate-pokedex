@@ -5,7 +5,7 @@ import {
 } from "react-icons/io"
 import { useNavigate, useParams } from "react-router-dom"
 
-export const NavigationButton = () => {
+export const NavigationButtonsInfo = () => {
 	const params = useParams()
 	const navigate = useNavigate()
 	const handlePageReturn = () => navigate(-1)

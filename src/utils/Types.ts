@@ -39,3 +39,23 @@ export type PokemonProps = {
 export type ColorByTypeProps = {
 	[key: string]: string
 }
+
+export type StatusBonusProps = {
+	[key: string]: number
+}
+
+export type CatchValuesProps = {
+	name: string
+	level: number
+	ball: string
+	currentHPPercent: number
+	totalHP: number
+	status: string
+}
+
+export type BallsBonusProps = {
+	[key: string]: {
+		ballBonus: number
+		extraBonus: number
+	}
+}

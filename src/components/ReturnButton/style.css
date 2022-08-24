@@ -1,0 +1,4 @@
+.navigationReturn_button {
+	@apply fixed flex flex-grow-0 top-0 left-0
+	mt-2 px-4 py-2 text-white text-3xl drop-shadow-md z-10;
+}

@@ -1,0 +1,71 @@
+.pokemonQuiz_limiter {
+	@apply absolute max-w-[90vw] max-h-[90vh] sm:max-h-[70vh]
+	w-[26rem] h-full 2xl:text-[150%] border border-white/20
+	border-b-red-900/40 border-r-red-900/40 rounded-2xl
+	sm:rounded-[2rem] shadow-xl shadow-black;
+}
+
+.pokemonQuiz {
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	@apply relative flex flex-col items-center w-full h-full p-3
+	sm:p-10 gap-3 sm:gap-10 bg-white/10 text-white text-center
+	rounded-2xl sm:rounded-[2rem] overflow-auto scrollbar-none;
+}
+
+.pokemonQuiz_content {
+	@apply flex flex-col gap-10;
+}
+
+.pokemonQuiz_content h2 {
+	@apply flex flex-col justify-center items-center font-bold
+	text-lg sm:text-2xl text-center;
+}
+
+.pokemonQuiz_content > form {
+	@apply flex flex-col justify-center items-center gap-4;
+}
+
+.pokemonQuiz_content input {
+	@apply text-black;
+}
+
+.pokemonQuiz_content > form > .audioButton {
+	@apply p-4 bg-red-700 text-3xl shadow-md shadow-black/50
+	rounded-full;
+}
+
+.pokemonsQuiz_selectionType {
+	@apply flex flex-wrap justify-center gap-4;
+}
+
+.pokemonsQuiz_selectionType > button,
+.pokemonQuiz_content > form > button {
+	@apply px-8 py-2 bg-red-700 shadow-md shadow-black/50
+	hover:brightness-125 rounded-md duration-200;
+}
+
+.pokemonQuiz_audioAnswer_options {
+	@apply flex gap-4;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+input[type="radio"]:checked ~ img {
+	@apply bg-red-500/70 rounded-lg;
+}
+
+.pokemonQuiz_answer_correct,
+.pokemonQuiz_answer_wrong {
+	@apply px-8 py-2 font-bold text-[1.5rem] rounded-md text-white;
+}
+
+.pokemonQuiz_answer_correct {
+	@apply bg-green-700;
+}
+
+.pokemonQuiz_answer_wrong {
+	@apply bg-red-700;
+}

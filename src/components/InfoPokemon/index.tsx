@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom"
 
 import { colorsByPokemonType } from "../../utils/colorByPokemonType"
 import { handleTailwindValidValue } from "../../utils/dataTransform"
-import { NavigationButton } from "./NavigationButtons"
+import { NavigationButtonsInfo } from "./NavigationButtons"
 import { pokeAPIReq } from "../../utils/pokeAPIReq"
 import { PokemonProps } from "../../utils/Types"
 import { StatsCharts } from "./StatsCharts"
@@ -45,11 +45,11 @@ export const InfoPokemon = () => {
 	return (
 		<>
 			<Pokedex />
-			<div className="pokemonInfo_limiter transition200">
+			<div className="pokemonInfo_limiter">
 				<div className="pokemonInfo_navigationButtons">
-					<NavigationButton />
+					<NavigationButtonsInfo />
 				</div>
-				<div className="pokemonInfo">
+				<div className="pokemonInfo fadein">
 					<div className="pokemonInfo-mediaQueryOptions">
 						<figure className="pokemonInfo_figure">
 							<Figure pokemon={pokemonInfo} id={params.id} />

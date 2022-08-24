@@ -998,7 +998,7 @@ export const pokemonNames: PokemonSimpleDataProps[] = [
 		id: "249",
 	},
 	{
-		name: "ho-oh",
+		name: "hooh",
 		id: "250",
 	},
 	{
@@ -1946,7 +1946,7 @@ export const pokemonNames: PokemonSimpleDataProps[] = [
 		id: "486",
 	},
 	{
-		name: "giratina-altered",
+		name: "giratina",
 		id: "487",
 	},
 	{
@@ -2982,7 +2982,7 @@ export const pokemonNames: PokemonSimpleDataProps[] = [
 		id: "745",
 	},
 	{
-		name: "wishiwashi-solo",
+		name: "wishiwashi",
 		id: "746",
 	},
 	{
@@ -3110,7 +3110,7 @@ export const pokemonNames: PokemonSimpleDataProps[] = [
 		id: "777",
 	},
 	{
-		name: "mimikyu-disguised",
+		name: "mimikyu",
 		id: "778",
 	},
 	{
@@ -3126,7 +3126,7 @@ export const pokemonNames: PokemonSimpleDataProps[] = [
 		id: "781",
 	},
 	{
-		name: "jangmo-o",
+		name: "jangmoo",
 		id: "782",
 	},
 	{

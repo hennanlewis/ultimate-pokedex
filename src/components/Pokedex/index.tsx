@@ -8,7 +8,7 @@ export const Pokedex = () => {
 			<div className="pokedex group">
 				<img className="pokedex_top" src="pokedex.svg" alt="Kalos Pokedex up" />
 				<div className="pokedex_display">
-					<Link to="national-pokedex" className="pokedex_display_button">
+					<Link to="menu" className="pokedex_display_button">
 						Open pokedex
 					</Link>
 				</div>

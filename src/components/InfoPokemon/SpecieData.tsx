@@ -2,7 +2,7 @@ import { useState } from "react"
 import { FaPause, FaPlay } from "react-icons/fa"
 
 import { PokemonProps } from "../../utils/Types"
-import useInterval from "../../utils/useInterval"
+import { useInterval } from "../../utils/useInterval"
 
 export const SpecieData = (props: { pokemon: PokemonProps | null }) => {
 	const { pokemon } = props

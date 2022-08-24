@@ -1,58 +1,42 @@
 .nationalPokedex_display {
-	@apply absolute max-w-[90vw] max-h-[90vh] sm:max-h-[70vh]
-	w-full h-full 2xl:text-[150%] border border-white/20
-	border-b-sky-900/40 border-r-sky-900/40 rounded-2xl
-	sm:rounded-[2rem] shadow-xl shadow-black;
 }
 
 .nationalPokedex_limiter {
-	@apply absolute max-w-[90vw] max-h-[90vh] sm:max-h-[70vh]
-	w-full h-full 2xl:text-[150%] border border-white/20
-	border-b-sky-900/40 border-r-sky-900/40 rounded-2xl
-	sm:rounded-[2rem] shadow-xl shadow-black overflow-hidden;
+	@apply absolute max-w-[90vw] max-h-[90vh] sm:max-h-[70vh] w-full h-full
+	2xl:text-[150%] border border-white/20 border-b-sky-900/40
+	border-r-sky-900/40 rounded-2xl sm:rounded-[2rem]
+	shadow-xl shadow-black;
 }
 
 .nationalPokedex {
 	backdrop-filter: blur(4px);
 	-webkit-backdrop-filter: blur(4px);
+	@apply relative flex flex-col w-full h-full p-3 sm:p-10 gap-3
+	sm:gap-10 bg-white/10 text-white rounded-2xl
+	sm:rounded-[2rem];
+}
+
+.nationalPokedex_navigationButtons {
+	@apply absolute flex justify-between w-full top-0 left-0
+	mt-2 px-4 py-2 text-white text-3xl drop-shadow-md z-10;
+}
+
+.nationalPokedex_cards {
 	@apply grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4
-	xl:grid-cols-6 2xl:grid-cols-8 content-start w-full h-full p-4
-	gap-4 bg-white/10 text-white rounded-2xl sm:rounded-[2rem]
-	overflow-auto scrollbar-thin scrollbar-thumb-sky-400
-	scrollbar-track-transparent;
+	xl:grid-cols-6 2xl:grid-cols-8 gap-3 p-2 overflow-auto
+	scrollbar-thin scrollbar-track-transparent;
 }
 
 .scrollbar-thin {
-	--scrollbar-thumb: #0d6a9c;
+	--scrollbar-thumb: #0284c7b3;
 }
 
-.nationalPokedex_search {
-	@apply relative flex flex-col justify-center items-center w-full
-	h-full p-2 bg-sky-600/70 font-bold text-base;
-}
-
-.nationalPokedex_search > span {
-	@apply relative flex justify-center items-center;
-}
-
-.nationalPokedex_search,
 .nationalPokedex_figure {
-	@apply relative flex items-center p-2 rounded-lg aspect-[4/3]
-	bg-sky-600/70 text-white border border-white/20
-	border-b-sky-900/40 border-r-sky-900/40
+	@apply relative flex flex-col items-center p-2 rounded-lg
+	aspect-[4/3] bg-sky-600/70 text-white border
+	border-white/20 border-b-sky-900/40 border-r-sky-900/40
 	hover:brightness-110 hover:scale-105 duration-200;
-	animation: fadein 500ms;
 }
-.nationalPokedex_figure {
-	@apply flex-col;
-}
-
-@keyframes fadein {
-	from {
-		opacity: 0;
-	}
-}
-
 .nationalPokedex_figure > img {
 	@apply relative object-fill w-2/3;
 }
@@ -75,7 +59,7 @@
 	backdrop-filter: blur(4px);
 	-webkit-backdrop-filter: blur(4px);
 	@apply fixed flex flex-col justify-center items-center top-0
-	left-0 w-screen h-screen bg-black/50;
+	left-0 w-screen h-screen bg-black/50 duration-200;
 }
 
 .nationalPokedex_searchScreen_options {

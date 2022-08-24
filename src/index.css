@@ -23,6 +23,12 @@ body {
 	to-black;
 }
 
-.transition200 {
-	@apply duration-200;
+.fadein {
+	animation: fadein 300ms ease-in-out;
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
 }

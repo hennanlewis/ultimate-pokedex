@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
-import { BiSearchAlt } from "react-icons/bi"
 
+import { NationalPokedexButton } from "./NationalPokedexButton"
 import { handleSharpedIDs } from "../../utils/dataTransform"
 import { pokemonNames } from "../../utils/pokemonNames"
-import useInterval from "../../utils/useInterval"
+import { useInterval } from "../../utils/useInterval"
 import { SimpleSearch } from "./SimpleSearch"
 import { PokemonCard } from "./PokemonCard"
 import { Pokedex } from "./../Pokedex"
@@ -55,34 +55,28 @@ export const NationalPokedex = () => {
 	return (
 		<>
 			<Pokedex />
-			<div className="nationalPokedex_display">
-				<div className="nationalPokedex_limiter transition200">
-					<div className="nationalPokedex">
-						<button
-							type="button"
-							className="nationalPokedex_search"
-							onClick={() => setIsSearchActive(true)}
-						>
-							<span>
-								Pesquisar
-								<BiSearchAlt className="font-sans -scale-x-100" />
-							</span>
-							<strong>{search}</strong>
-						</button>
+			<div className="nationalPokedex_limiter">
+				<div className="nationalPokedex">
+					<div className="nationalPokedex_navigationButtons">
+						<NationalPokedexButton setIsSearchActive={setIsSearchActive} />
+					</div>
+					<div className="nationalPokedex_cards">
 						{pokemons.map((item) => (
 							<PokemonCard key={item.name} pokemon={item} />
 						))}
-						<i id="watcher" />
+						<i id="watcher" className="h-2" />
 					</div>
 				</div>
-				{isSearchActive && (
+			</div>
+			{isSearchActive && (
+				<div className="nationalPokedex_searchScreen">
 					<SimpleSearch
 						search={search}
 						setSearch={setSearch}
 						setIsSearchActive={setIsSearchActive}
 					/>
-				)}
-			</div>
+				</div>
+			)}
 		</>
 	)
 }

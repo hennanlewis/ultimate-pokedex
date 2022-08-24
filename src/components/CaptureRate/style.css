@@ -5,11 +5,6 @@
 	shadow-xl shadow-black;
 }
 
-.captureRate_navigationButtons {
-	@apply absolute flex justify-between w-full mt-2
-	px-4 py-2 text-white text-3xl drop-shadow-md z-10;
-}
-
 .captureRate {
 	backdrop-filter: blur(4px);
 	-webkit-backdrop-filter: blur(4px);
@@ -18,13 +13,15 @@
 	sm:rounded-[2rem] overflow-auto scrollbar-none;
 }
 
-.captureRate_form,
+.captureRate_form {
+	@apply flex flex-col gap-3;
+}
 .captureRate_form > div {
-	@apply flex flex-col gap-4;
+	@apply flex gap-3;
 }
 
 .captureRate_form label {
-	@apply flex flex-col gap-1;
+	@apply flex flex-1 flex-col gap-1;
 }
 
 .captureRate_form button {

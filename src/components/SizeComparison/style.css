@@ -1,0 +1,49 @@
+.sizeComparison_limiter {
+	@apply absolute max-w-[90vw] max-h-[90vh] sm:max-h-[70vh]
+	w-[26rem] h-full 2xl:text-[150%] border border-white/20
+	border-b-red-900/40 border-r-red-900/40 rounded-2xl
+	sm:rounded-[2rem] shadow-xl shadow-black;
+}
+
+.sizeComparison {
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	@apply relative flex flex-col w-full h-full p-3 sm:p-10 gap-3
+	sm:gap-10 bg-white/10 text-white rounded-2xl
+	sm:rounded-[2rem] overflow-auto scrollbar-none;
+}
+
+.sizeComparison_form {
+	@apply flex flex-col gap-4;
+}
+
+.sizeComparison_form_options {
+	@apply flex flex-col gap-2;
+}
+
+.sizeComparison_form_options > button,
+.sizeComparison_form > label > button {
+	@apply py-1 bg-red-700 shadow-md shadow-black/50
+	hover:brightness-125 rounded-md duration-200;
+}
+
+.sizeComparison_form > label {
+	@apply flex flex-col gap-1;
+}
+
+.sizeComparison_form > label > input {
+	@apply p-1 text-black rounded-md;
+}
+
+.sizeComparison_images_ash,
+.sizeComparison_images_pokemon {
+	@apply relative flex justify-center items-end;
+}
+
+:where(.sizeComparison_images_ash, .sizeComparison_images_pokemon) > img {
+	@apply duration-200;
+}
+
+.sizeComparison_images_selectedPokemon {
+	@apply self-end translate-y-[10%];
+}

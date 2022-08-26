@@ -7,7 +7,7 @@ import { SelectedAnswer } from "./SelectedAnswer"
 import { pokemonNames } from "../../utils/pokemonNames"
 import { useInterval } from "../../utils/useInterval"
 
-export const AudioQuiz = () => {
+export const CriesQuiz = () => {
 	const [answersArray, setAnswersArray] = useState(
 		numberArrayGenerator(pokemonNames.length, 3)
 	)

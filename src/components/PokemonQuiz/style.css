@@ -26,8 +26,13 @@
 	@apply flex flex-col justify-center items-center gap-4;
 }
 
-.pokemonQuiz_content input {
+.pokemonQuiz_content input,
+.pokemonQuiz_content select {
 	@apply text-black;
+}
+
+.pokemonQuiz_content select {
+	@apply w-40;
 }
 
 .pokemonQuiz_content > form > .audioButton {

@@ -9,6 +9,7 @@ import { pokeAPIReqArray } from "./utils/pokeAPIReq"
 import { PokemonsResultProps } from "./utils/Types"
 import { MenuPage } from "./components/MenuPage"
 import { Pokedex } from "./components/Pokedex"
+import { SizeComparison } from "./components/SizeComparison"
 
 function App() {
 	const [, setPokemons] = useState<PokemonsResultProps[] | []>([])
@@ -34,6 +35,7 @@ function App() {
 					<Route path="pokemon" element={<NationalPokedex />} />
 					<Route path="pokemon/:id" element={<InfoPokemon />} />
 					<Route path="pokemon-quiz" element={<PokemonQuiz />} />
+					<Route path="size-comparison" element={<SizeComparison />} />
 				</Routes>
 			</HashRouter>
 		</>

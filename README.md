@@ -37,7 +37,7 @@ Como uma grande parte dos projetos usam a PokeAPI apenas pra fazer a requisiçã
 
 ### Agora em relação às funções pretendidas, são as seguintes:
 - [x] exibir Pokedex Nacional (todos os pokemon e seus respectivos nomes)
-- [ ] comparar tamanho do pokemon com o tamanho do Ash
+- [x] comparar tamanho do pokemon com o tamanho do Ash
 - [x] cálculo de porcentagem de taxa de sucesso de captura
 - [x] exibir valores base de stats base em gráficos (Chart.js)
 - [x] exibir dados sobre cada pokemon individualmente

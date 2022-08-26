@@ -32,6 +32,10 @@ export const MenuPage = () => {
 							<img src="./MenuBG/Quiz.png" alt="" />
 							<span>Quiz Pokemon</span>
 						</Link>
+						<Link to="/size-comparison" className="menuPage_options_item">
+							<img src="./MenuBG/Ruler.png" alt="" />
+							<span>Size comparison</span>
+						</Link>
 					</div>
 				</div>
 			</div>

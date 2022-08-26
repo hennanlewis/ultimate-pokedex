@@ -12,7 +12,7 @@ export const SelectedAnswer = (props: {
 
 			{selectedAnswer !== correctAnswer && type === "audio" && (
 				<>
-					<h3 className="pokemonQuiz_answer_correct">The correct one is:</h3>
+					<h3 className="pokemonQuiz_answer_wrong">The correct one is:</h3>
 					<img
 						src={[
 							"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/",

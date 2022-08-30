@@ -55,7 +55,7 @@ export const NationalPokedex = () => {
 	return (
 		<>
 			<Pokedex />
-			<div className="nationalPokedex_limiter">
+			<main className="nationalPokedex_limiter">
 				<div className="nationalPokedex">
 					<div className="nationalPokedex_navigationButtons">
 						<NationalPokedexButton setIsSearchActive={setIsSearchActive} />
@@ -67,7 +67,7 @@ export const NationalPokedex = () => {
 						<i id="watcher" className="h-2" />
 					</div>
 				</div>
-			</div>
+			</main>
 			{isSearchActive && (
 				<div className="nationalPokedex_searchScreen">
 					<SimpleSearch

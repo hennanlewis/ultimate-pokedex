@@ -3,9 +3,10 @@ import { FaPause, FaPlay } from "react-icons/fa"
 
 import { numberArrayGenerator } from "../../utils/numberArrayGenerator"
 import { handleCapitalize } from "../../utils/dataTransform"
-import { SelectedAnswer } from "./SelectedAnswer"
 import { pokemonNames } from "../../utils/pokemonNames"
 import { useInterval } from "../../utils/useInterval"
+import { SelectedAnswer } from "./SelectedAnswer"
+import { srcModels } from "../../utils/srcModels"
 
 export const CriesQuiz = () => {
 	const [answersArray, setAnswersArray] = useState(
@@ -17,13 +18,11 @@ export const CriesQuiz = () => {
 
 	const correctAnswer = answersArray[0]
 	const audio = new Audio(
-		[
-			"https://play.pokemonshowdown.com/audio/cries/",
+		srcModels.pokemonCries(
 			pokemonNames
 				.filter((item) => item.id === String(correctAnswer))[0]
-				.name.replace("-", ""),
-			".mp3",
-		].join("")
+				.name.replace("-", "")
+		)
 	)
 
 	useInterval(
@@ -67,11 +66,7 @@ export const CriesQuiz = () => {
 						<label key={item}>
 							<input type="radio" name="audioAnswer" value={item} />
 							<img
-								src={[
-									"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/",
-									item,
-									".png",
-								].join("")}
+								src={srcModels.pokeAPIFrontSprite(String(item))}
 								alt={handleCapitalize(pokemonNames[Number(item) - 1].name)}
 								title={handleCapitalize(pokemonNames[Number(item) - 1].name)}
 							/>

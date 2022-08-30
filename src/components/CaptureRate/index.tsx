@@ -1,14 +1,16 @@
 import { ChangeEvent, useState } from "react"
 
-import { handleCapitalize } from "../../utils/dataTransform"
-import { pokeAPIReq } from "../../utils/pokeAPIReq"
-import { ballsOptions } from "../../utils/pokeballsCatchData"
-import { pokemonNames } from "../../utils/pokemonNames"
-import { statusModifier } from "../../utils/statusCatchData"
 import { CatchValuesProps, PokemonProps } from "../../utils/Types"
-import { Pokedex } from "../Pokedex"
-import { ReturnButton } from "../ReturnButton"
+import { ballsOptions } from "../../utils/pokeballsCatchData"
+import { statusModifier } from "../../utils/statusCatchData"
+import { pokemonNames } from "../../utils/pokemonNames"
+import { PokemonDatalist } from "../PokemonDatalist"
+import { pokeAPIReq } from "../../utils/pokeAPIReq"
 import { CaptureDisplay } from "./CaptureDisplay"
+import { ReturnButton } from "../ReturnButton"
+import { SelectValues } from "./SelectValues"
+import { RangeInput } from "./RangeInput"
+import { Pokedex } from "../Pokedex"
 import "./style.css"
 
 export const CaptureRate = () => {
@@ -58,96 +60,56 @@ export const CaptureRate = () => {
 	return (
 		<>
 			<Pokedex />
-			<div className="captureRate_limiter">
+			<main className="captureRate_limiter">
 				<div className="captureRate">
 					<ReturnButton />
 					<form className="captureRate_form fadein">
+						<PokemonDatalist />
 						<label>
 							<span>Pokemon:</span>
 							<input
 								type="text"
 								list="pokemon"
 								value={catchValues.name}
+								name="pokemon"
 								onChange={(event) => handleChangeDataField(event, "name")}
 							/>
 							<button type="button" onClick={handleSelectedPokemon}>
 								Select pokemon
 							</button>
-							<datalist id="pokemon">
-								{[...pokemonNames]
-									.sort((a, b) => (a.name > b.name ? 1 : -1))
-									.map((item) => (
-										<option key={item.name} value={item.name}>
-											{item.name}
-										</option>
-									))}
-							</datalist>
 						</label>
 
-						<label>
-							<span>Current HP: {catchValues.currentHPPercent}%</span>
-							<input
-								type="range"
-								min="1"
-								max="100"
-								value={catchValues.currentHPPercent}
-								onChange={(event) =>
-									handleChangeDataField(event, "currentHPPercent")
-								}
-							/>
-						</label>
+						<RangeInput
+							title="Current HP"
+							name="currentHPPercent"
+							value={catchValues.currentHPPercent}
+							showedValue={String(catchValues.currentHPPercent + "%")}
+							handleChangeDataField={handleChangeDataField}
+						/>
 
 						<div>
-							<label>
-								<span>Ball:</span>
-								<select
-									className="text-black"
-									value={catchValues.ball}
-									onChange={(event) =>
-										setCatchValues({
-											...catchValues,
-											ball: event.target.value,
-										})
-									}
-								>
-									{Object.keys(ballsOptions).map((item) => (
-										<option key={item} value={handleCapitalize(item)}>
-											{handleCapitalize(item)}
-										</option>
-									))}
-								</select>
-							</label>
-							<label>
-								<span>Status:</span>
-								<select
-									className="text-black"
-									value={catchValues.status}
-									onChange={(event) =>
-										setCatchValues({
-											...catchValues,
-											status: event.target.value,
-										})
-									}
-								>
-									{Object.keys(statusModifier).map((item) => (
-										<option key={item} value={handleCapitalize(item)}>
-											{handleCapitalize(item)}
-										</option>
-									))}
-								</select>
-							</label>
+							<SelectValues
+								name="ball"
+								value={catchValues.ball}
+								keys={ballsOptions}
+								setState={setCatchValues}
+							/>
+
+							<SelectValues
+								name="status"
+								value={catchValues.status}
+								keys={statusModifier}
+								setState={setCatchValues}
+							/>
 						</div>
 
-						<label>
-							<span>Level: {catchValues.level}</span>
-							<input
-								type="range"
-								min="1"
-								max="100"
-								value={catchValues.level}
-								onChange={(event) => handleChangeDataField(event, "level")}
-							/>
-						</label>
+						<RangeInput
+							title="Level"
+							name="level"
+							value={catchValues.level}
+							showedValue={String(catchValues.level)}
+							handleChangeDataField={handleChangeDataField}
+						/>
 					</form>
 					{pokemon && (
 						<div className="captureRate_display_limiter">
@@ -156,7 +118,7 @@ export const CaptureRate = () => {
 					)}
 					<br />
 				</div>
-			</div>
+			</main>
 		</>
 	)
 }

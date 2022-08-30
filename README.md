@@ -26,7 +26,7 @@ Como uma grande parte dos projetos usam a PokeAPI apenas pra fazer a requisiçã
 - [x] utilizar **glassmorphism*** como padrão de design
 - [x] utilizar a PokeAPI pra obter os dados
 - [x] utilizar React com TypeScript
-- [ ] Adicção de testes unitários
+- [x] Adicção de testes unitários
 - [x] aplicação responsível
 - [ ] utilizar **GraphQL****
 
@@ -45,8 +45,7 @@ Como uma grande parte dos projetos usam a PokeAPI apenas pra fazer a requisiçã
 - [ ] exibir pokemon por geração dos jogos
 - [x] quiz "quem é esse pokemon?"
 - [x] quiz dos sons de pokemon
-- [ ] filtros de pesquisa
-- [ ] lista de golpes
+- [x] filtros de pesquisa
 
 <br>
 

@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { FaPause, FaPlay } from "react-icons/fa"
+import { srcModels } from "../../utils/srcModels"
 
 import { PokemonProps } from "../../utils/Types"
 import { useInterval } from "../../utils/useInterval"
@@ -8,13 +9,7 @@ export const SpecieData = (props: { pokemon: PokemonProps | null }) => {
 	const { pokemon } = props
 
 	const [isPLaying, setIsPLaying] = useState(false)
-	const audio = new Audio(
-		[
-			"https://play.pokemonshowdown.com/audio/cries/",
-			pokemon?.name,
-			".mp3",
-		].join("")
-	)
+	const audio = new Audio(pokemon ? srcModels.pokemonCries(pokemon.name) : "")
 
 	useInterval(
 		() => {

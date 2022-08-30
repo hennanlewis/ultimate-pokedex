@@ -45,7 +45,7 @@ export const InfoPokemon = () => {
 	return (
 		<>
 			<Pokedex />
-			<div className="pokemonInfo_limiter">
+			<main className="pokemonInfo_limiter">
 				<div className="pokemonInfo_navigationButtons">
 					<NavigationButtonsInfo />
 				</div>
@@ -66,7 +66,7 @@ export const InfoPokemon = () => {
 						)}
 					</div>
 				</div>
-			</div>
+			</main>
 		</>
 	)
 }

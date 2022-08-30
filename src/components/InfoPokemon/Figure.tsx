@@ -1,4 +1,5 @@
 import { handleCapitalize, handleSharpedIDs } from "../../utils/dataTransform"
+import { srcModels } from "../../utils/srcModels"
 import { PokemonProps } from "../../utils/Types"
 
 export const Figure = (props: {
@@ -13,11 +14,7 @@ export const Figure = (props: {
 				{handleSharpedIDs(id)}
 			</figcaption>
 			<img
-				src={[
-					"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/",
-					id,
-					".png",
-				].join("")}
+				src={srcModels.pokeAPIOfficialArtwork(id)}
 				alt={handleCapitalize(String(pokemon?.name))}
 			/>
 		</>
@@ -26,12 +23,7 @@ export const Figure = (props: {
 			<figcaption className="pokemonInfo_figure_captionMissingno">
 				MissingNo
 			</figcaption>
-			<img
-				src={
-					"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png"
-				}
-				alt="MissingNo"
-			/>
+			<img src={srcModels.pokeAPIFrontSprite("0")} alt="MissingNo" />
 		</>
 	)
 }

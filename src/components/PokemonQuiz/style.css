@@ -50,6 +50,15 @@
 	hover:brightness-125 rounded-md duration-200;
 }
 
+.pokemonQuiz_button_actions {
+	@apply flex gap-2;
+}
+
+.pokemonQuiz_button_actions > button {
+	@apply px-4 py-2 bg-red-700 shadow-md shadow-black/50
+	hover:brightness-125 rounded-md duration-200;
+}
+
 .pokemonQuiz_audioAnswer_options {
 	@apply flex gap-4;
 }

@@ -1,4 +1,6 @@
+import { handleCapitalize } from "../../utils/dataTransform"
 import { pokemonNames } from "../../utils/pokemonNames"
+import { srcModels } from "../../utils/srcModels"
 
 export const CompareToAshImages = (props: {
 	sizeRatio: number
@@ -24,12 +26,11 @@ export const CompareToAshImages = (props: {
 							? { height: 15 / sizeRatio + "rem" }
 							: { height: "15rem" }
 					}
-					src={[
-						"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/",
-						pokemonNames.filter((item) => item.name === selectedPokemon)[0].id,
-						".png",
-					].join("")}
-					alt=""
+					src={srcModels.pokeAPIOfficialArtwork(
+						pokemonNames.filter((item) => item.name === selectedPokemon)[0].id
+					)}
+					alt={handleCapitalize(selectedPokemon)}
+					title={handleCapitalize(selectedPokemon)}
 				/>
 			)}
 		</>

@@ -5,13 +5,13 @@ export const StateValues = (props: { stats: StatsProps[] | undefined }) => {
 		<div className="pokemonInfo_stats_values">
 			{props.stats
 				? props.stats.map((item) => (
-						<div
+						<span
 							key={item.stat.name}
 							className={`pokemon_stats_${item.stat.name.replace("-", "")}`}
 						>
 							<span>{item.base_stat}</span>
 							<span>{item.stat.name.replace("-", " ")}</span>
-						</div>
+						</span>
 				  ))
 				: Array(6)
 						.fill(1)

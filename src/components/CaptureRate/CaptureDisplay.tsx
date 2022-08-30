@@ -79,7 +79,7 @@ export const CaptureDisplay = (props: {
 				/>
 			</div>
 			<div className="captureRate_display_screenBottom">
-				Your chance of capture a {pokemon.name} with a{" "}
+				Your chance of capture this {pokemon.name} with the{" "}
 				{catchValues.ball.toLowerCase()} is {catchRate}%.
 			</div>
 		</div>

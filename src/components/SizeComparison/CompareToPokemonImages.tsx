@@ -1,4 +1,5 @@
 import { pokemonNames } from "../../utils/pokemonNames"
+import { srcModels } from "../../utils/srcModels"
 
 export const CompareAshToPokemon = (props: {
 	sizeRatio: number
@@ -11,12 +12,11 @@ export const CompareAshToPokemon = (props: {
 			{selectedPokemon1 !== "" && (
 				<img
 					className="sizeComparison_images_selectedPokemon"
-					src={[
-						"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/",
-						pokemonNames.filter((item) => item.name === selectedPokemon1)[0].id,
-						".png",
-					].join("")}
-					alt=""
+					src={srcModels.pokeAPIOfficialArtwork(
+						pokemonNames.filter((item) => item.name === selectedPokemon1)[0].id
+					)}
+					alt={selectedPokemon1}
+					title={selectedPokemon1}
 					style={
 						sizeRatio < 1
 							? { height: 10 * sizeRatio + "rem" }
@@ -32,12 +32,11 @@ export const CompareAshToPokemon = (props: {
 							? { height: 10 / sizeRatio + "rem" }
 							: { height: "10rem" }
 					}
-					src={[
-						"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/",
-						pokemonNames.filter((item) => item.name === selectedPokemon2)[0].id,
-						".png",
-					].join("")}
-					alt=""
+					src={srcModels.pokeAPIOfficialArtwork(
+						pokemonNames.filter((item) => item.name === selectedPokemon2)[0].id
+					)}
+					alt={selectedPokemon2}
+					title={selectedPokemon2}
 				/>
 			)}
 		</>

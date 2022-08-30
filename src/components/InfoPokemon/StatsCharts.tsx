@@ -1,6 +1,6 @@
+import { StatsRadarChart } from "./StatsRadarChart"
 import { PokemonProps } from "../../utils/Types"
 import { StatsBarChart } from "./StatsBarCharts"
-import { StatsRadarChart } from "./StatsRadarChart"
 
 export const StatsCharts = (props: {
 	pokemonInfo: PokemonProps

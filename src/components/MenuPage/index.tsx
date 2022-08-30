@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom"
 
-import { Pokedex } from "../Pokedex"
 import { ReturnButton } from "../ReturnButton"
+import { Pokedex } from "../Pokedex"
 import "./style.css"
 
 export const MenuPage = () => {
 	return (
 		<>
 			<Pokedex />
-			<div className="menuPage_limiter">
+			<main className="menuPage_limiter">
 				<div className="menuPage">
 					<ReturnButton />
 					<div className="menuPage_options fadein">
@@ -34,11 +34,11 @@ export const MenuPage = () => {
 						</Link>
 						<Link to="/size-comparison" className="menuPage_options_item">
 							<img src="./MenuBG/Ruler.png" alt="" />
-							<span>Size comparison</span>
+							<span>Size Comparison</span>
 						</Link>
 					</div>
 				</div>
-			</div>
+			</main>
 		</>
 	)
 }

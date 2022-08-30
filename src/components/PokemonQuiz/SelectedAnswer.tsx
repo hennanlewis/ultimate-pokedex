@@ -1,3 +1,5 @@
+import { srcModels } from "../../utils/srcModels"
+
 export const SelectedAnswer = (props: {
 	selectedAnswer: string
 	correctAnswer: string
@@ -13,14 +15,7 @@ export const SelectedAnswer = (props: {
 			{selectedAnswer !== correctAnswer && type === "audio" && (
 				<>
 					<h3 className="pokemonQuiz_answer_wrong">The correct one is:</h3>
-					<img
-						src={[
-							"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/",
-							correctAnswer,
-							".png",
-						].join("")}
-						alt=""
-					/>
+					<img src={srcModels.pokeAPIFrontSprite(correctAnswer)} alt="" />
 				</>
 			)}
 

@@ -1,5 +1,5 @@
-import { useState } from "react"
 import { pokemonNames } from "../../utils/pokemonNames"
+import { srcModels } from "../../utils/srcModels"
 
 export const QuizAnswers = (props: {
 	srcNumber: number
@@ -16,13 +16,7 @@ export const QuizAnswers = (props: {
 			<div className="pokemonQuiz_question_answers">
 				{answers.map((item) => (
 					<button type="button" onClick={() => setAnswer(String(item))}>
-						<img
-							src={[
-								"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/",
-								item,
-								".png",
-							].join("")}
-						/>
+						<img src={srcModels.pokeAPIFrontSprite(String(item))} />
 					</button>
 				))}
 			</div>

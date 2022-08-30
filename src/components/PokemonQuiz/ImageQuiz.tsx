@@ -1,7 +1,9 @@
 import { ChangeEvent, useState } from "react"
+import { BiRefresh } from "react-icons/bi"
 
 import { numberArrayGenerator } from "../../utils/numberArrayGenerator"
 import { pokemonNames } from "../../utils/pokemonNames"
+import { srcModels } from "../../utils/srcModels"
 import { SelectedAnswer } from "./SelectedAnswer"
 
 export const ImageQuiz = () => {
@@ -35,11 +37,7 @@ export const ImageQuiz = () => {
 				<>
 					<img
 						className="brightness-0"
-						src={[
-							"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/",
-							randomPokemon[0],
-							".png",
-						].join("")}
+						src={srcModels.pokeAPIOfficialArtwork(String(randomPokemon[0]))}
 						alt="Pokemon quiz"
 					/>
 					<label>
@@ -61,12 +59,6 @@ export const ImageQuiz = () => {
 				</>
 			)}
 
-			{!isAnswerSelected && (
-				<button type="button" onClick={handleChooseOption}>
-					Select answer
-				</button>
-			)}
-
 			{isAnswerSelected && (
 				<SelectedAnswer
 					correctAnswer={String(pokemonNames[randomPokemon[0] - 1].name)}
@@ -75,9 +67,16 @@ export const ImageQuiz = () => {
 				/>
 			)}
 
-			<button type="button" onClick={handleNewQuestion}>
-				New question
-			</button>
+			<div className="pokemonQuiz_button_actions">
+				{!isAnswerSelected && (
+					<button type="button" onClick={handleChooseOption}>
+						Select answer
+					</button>
+				)}
+				<button type="button" onClick={handleNewQuestion}>
+					<BiRefresh className="text-2xl" />
+				</button>
+			</div>
 		</>
 	)
 }

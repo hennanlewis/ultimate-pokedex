@@ -1,16 +1,16 @@
 .captureRate_limiter {
-	@apply absolute max-w-[90vw] max-h-[90vh] sm:max-h-[70vh] w-[26rem] h-full
+	@apply absolute max-w-[90vw] max-h-[90vh] sm:max-h-[70vh] w-[26rem]
 	2xl:text-[150%] border border-white/20 border-b-sky-900/40
 	border-r-sky-900/40 rounded-2xl sm:rounded-[2rem]
-	shadow-xl shadow-black;
+	shadow-xl shadow-black overflow-scroll scrollbar-none;
 }
 
 .captureRate {
 	backdrop-filter: blur(4px);
 	-webkit-backdrop-filter: blur(4px);
-	@apply flex flex-col w-full h-full p-3 sm:p-10 gap-3
+	@apply flex flex-col w-full p-3 sm:p-10 gap-3
 	sm:gap-10 bg-white/10 text-white rounded-2xl
-	sm:rounded-[2rem] overflow-auto scrollbar-none;
+	sm:rounded-[2rem] scrollbar-none;
 }
 
 .captureRate_form {

@@ -36,7 +36,15 @@
 	aspect-[4/3] bg-sky-600/70 text-white border
 	border-white/20 border-b-sky-900/40 border-r-sky-900/40
 	hover:brightness-110 hover:scale-105 duration-200;
+	animation: fadein 300ms ease-in-out;
 }
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+}
+
 .nationalPokedex_figure > img {
 	@apply relative object-fill w-2/3;
 }

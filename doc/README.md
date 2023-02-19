@@ -1,16 +1,16 @@
 # Ultimate Pokedex
 
 <div align="center">
-    <img src="./doc/screenshot1.jpg" width="49%" />
-    <img src="./doc/screenshot2.jpg" width="49%"  />
-    <img src="./doc/screenshot3.jpg"  />
-    <img src="./doc/screenshot4.jpg" width="49%" />
-    <img src="./doc/screenshot5.jpg" width="49%"  />
-    <img src="./doc/screenshot7.jpg" width="49%" />
-    <img src="./doc/screenshot8.jpg" width="49%" />
-    <img src="./doc/screenshot6.jpg"  />
-    <img src="./doc/screenshot9.jpg" width="49%"  />
-    <img src="./doc/screenshot10.jpg" width="49%"  />
+    <img src="./screenshot1.jpg" width="49%" />
+    <img src="./screenshot2.jpg" width="49%"  />
+    <img src="./screenshot3.jpg"  />
+    <img src="./screenshot4.jpg" width="49%" />
+    <img src="./screenshot5.jpg" width="49%"  />
+    <img src="./screenshot7.jpg" width="49%" />
+    <img src="./screenshot8.jpg" width="49%"  />
+    <img src="./screenshot6.jpg"  />
+    <img src="./screenshot9.jpg" width="49%" />
+    <img src="./screenshot10.jpg" width="49%"  />
 </div>
 
 [Clique aqui para visualizar o projeto hospedado no Github Pages](http://hennanlewis.github.io/ultimate-pokedex)
